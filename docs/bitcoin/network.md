@@ -34,7 +34,7 @@ Một cách nghiêm túc, mọi ngươi đều có thể join ( tham gia ) vào 
 
 Mỗi lần bạn bật và chạy phần mềm này lên thì máy tính của bạn sẽ trở thành 1 Node trong Bitcoin Network.
 
-![05-nodes_network-0a04fe.png](/images/05-nodes_network.png)
+![05-nodes_network.png](/images/05-nodes_network.png)
 
 **Làm thế nào để join vào mạng Bitcoin**
 
