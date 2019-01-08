@@ -2,7 +2,7 @@
 
 Một mạng máy tính chạy các chương trình bitcoin
 
-Mạng bitcoin là gì?
+**Mạng bitcoin là gì?**
 
 Mạng bitcoin được hình thành bởi tất cả những người chạy phần mềm bitcoin ( bitcoin client ).
 
