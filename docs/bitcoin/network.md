@@ -44,5 +44,4 @@ Rất có thể bạn phải điều chỉnh một chút cấu hình trên route
 
 https://bitcoin.org/en/full-node#gui-peer-info
 
-Nhưng đó chỉ là một công việc rất nhỏ thôi.  Chỉ cần download và chạy thì đã hoàn thành 95% chặng đường trở thành 1 active node trên Bitcoin Network rồi.\
-\\
+Nhưng đó chỉ là một công việc rất nhỏ thôi.  Chỉ cần download và chạy thì đã hoàn thành 95% chặng đường trở thành 1 active node trên Bitcoin Network rồi.
