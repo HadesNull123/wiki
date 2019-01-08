@@ -1,66 +1,48 @@
 # Bitcoin Network
 
-#> The network of computers running the bitcoin program.
+Một mạng máy tính chạy các chương trình bitcoin
 
-## What is the Bitcoin Network?
+Mạng bitcoin là gì?
 
-The Bitcoin Network is made up of everyone running the bitcoin software (better known as “bitcoin clients”).
+Mạng bitcoin được hình thành bởi tất cả những người chạy phần mềm bitcoin ( bitcoin client ).
 
-![Bitcoin is a network people runnning the same computer program.](images/network/01-software_network.png)
+![01-software_network.png](/uploads/01-software_network.png)
 
-Bitcoin is a network people runnning the same computer program.
+**Mạng bitcoin làm công việc gì?**
 
-## What does the network do?
+![02-software_network_talking.png](/uploads/02-software_network_talking.png)
 
-People (well, bitcoin clients) on the network **talk to each other**.
+Mọi người ( bitcoin clients ) nói chuyện với nhau. Nói chuyện với nhau ở đây hàm nghĩa rằng thông tin được truyền từ bitcoin client này sang các client khác trong mạng. Công việc này được hoàn thiện khi client này gửi tới client khác một thông báo ( message ). Thông báo có thể là thông tin về một giao dịch mới mà client này muốn báo cho các client khác biết về giao dịch mà nó vừa thực hiện.
 
-![Very sociable.](images/network/02-software_network_talking.png)
+![03-software_network_talking_transaction.png](/uploads/03-software_network_talking_transaction.png)
 
-Very sociable.
+Việc chia sẻ thông tin, thông báo lẫn nhau như thế này giúp cho mọi người trên mạng lưới đều cập nhật được các thông tin mới nhất. Điều này khá là quan trọng đối với trường hợp bạn muốn chuyển các loại tiền số ( digital currency ) trên Internet.
 
-And by “talk to each other” I mean _pass on information_ about what’s going on in other parts of the network. This is done by sending each other _messages_.
+![04-software_network_talking_transaction_consensus.png](/uploads/04-software_network_talking_transaction_consensus.png)
 
-For example, a message could be **information about a new _transaction_**.
+> Mạng Bitcoin được mô tả là mạng ngang hàng ( peer to peer network) là vì
+>
+> 1\. Mọi người đều kết nối với những người tạo thành mạng nên gọi là network.
+>
+> 2\. Mọi người đều ngang hàng, bình đẳng nên gọi là peer.
 
-![Sharing information about new transactions.](images/network/03-software_network_talking_transaction.png)
+**Những ai tạo thành network**
 
-Sharing information about new transactions.
+Nhưng đã đề cập ở trên, **bất cứ ai kích hoạt đường truyền Internet và chạy 1 chương trình bitcoin client sẽ là những người tạo nên Bitcoin Network.**
 
-This sharing of information (e.g. transactions) is what allows the everyone on the network to keep up-to-date, which is pretty important if you want to run a digital currency on the Internet.
+Một cách nghiêm túc, mọi ngươi đều có thể join ( tham gia ) vào mạng Bitcoin.  Tất cả những thứ chúng ta cần chỉ là một đường truyền Internet và phần mềm [Bitcoin Client ](https://bitcoin.org/en/download)
 
-![Eventually everyone knows about the new transaction. Good network.](images/network/04-software_network_talking_transaction_consensus.png)
+Mỗi lần bạn bật và chạy phần mềm này lên thì máy tính của bạn sẽ trở thành 1 Node trong Bitcoin Network.
 
-Eventually everyone knows about the new transaction. Good network.
+![05-nodes_network-0a04fe.png](/uploads/05-nodes_network-0a04fe.png)
 
-The Bitcoin Network is described as a “[peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer) network”, because:
+**Làm thế nào để join vào mạng Bitcoin**
 
-1.  Everyone is connected to each other, so it’s a network.
-2.  Everyone on the network is equal, so we are peers.
+Download và cài đặt Bitcoin Client. Khi bạn chạy client này thì nó sẽ tự connect với các node khác trên mạng Bitcoin và download một bản sao đầy đủ của blockchain ( file chứa tất các các giao dịch đã được verified ) về máy tính của bạn. Sau đó client sẽ nhận các transaction từ các node khác và đẩy nó luân chuyển trở lại mạng qua các node khác.
 
-## Who makes up the network?
+Rất có thể bạn phải điều chỉnh một chút cấu hình trên router của mình để có thể cho phép các node khác theo hướng dẫn dưới đây.
 
-As mentioned, **anyone with an active Internet connection and running a bitcoin client**.
+https://bitcoin.org/en/full-node#gui-peer-info
 
-Seriously, _anyone can join the bitcoin network_. All you need is an internet connection and a [bitcoin client](https://bitcoin.org/en/download), which is a piece of software like any other.
-
-And once you’re up and running you’ll be referred to as a node on the bitcoin network.
-
-![Node - a slightly more concise way of saying an individual running a bitcoin client and relaying information around the network.](images/network/05-nodes_network.png)
-
-Node - a slightly more concise way of saying “an individual running a bitcoin client and relaying information around the network”.
-
-For more information on nodes, check out [nodes](/bitcoin/nodes).
-
-## How can I join the network?
-
-That’s the spirit.
-
-All you need to do is download (and run) a [bitcoin client](https://bitcoin.org/en/download).
-
-When you run the client it will connect to other nodes and start downloading a full copy of the blockchain (the file that contains all the verified transactions). After that, your client will start receiving transactions from other nodes and relaying them around the network.
-
-Congratulations, you are now a node on the bitcoin network.
-
-You may need to [edit some settings in your router to allow other nodes to connect to you](https://bitcoin.org/en/full-node#gui-peer-info), but this is just a minor configuration. By downloading and running a bitcoin client you are 95% of the way to becoming an active node on the bitcoin network.
-
-By Greg Walker, 27 February 2015
+Nhưng đó chỉ là một công việc rất nhỏ thôi.  Chỉ cần download và chạy thì đã hoàn thành 95% chặng đường trở thành 1 active node trên Bitcoin Network rồi.\
+\\
