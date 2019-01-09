@@ -1,3 +1,5 @@
+site:
+  baseurl: 'https://wiki.trada.tech/'
 prose:
   rooturl: 'docs/bitcoin'
   siteurl: 'https://wiki.trada.tech/'
