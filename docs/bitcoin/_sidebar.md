@@ -4,7 +4,7 @@
 
     * [The Bitcoin Network](bitcoin/network.md)
         * [Nodes](bitcoin/nodes.md)
-    * Mining
+    * [Mining](bitcoin/mining.md "Mining")
         * [Blockchain](bitcoin/blockchain.md)
         * Blocks
         * Difficulty
