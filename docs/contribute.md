@@ -23,7 +23,7 @@ Chúng tôi sẽ kiểm tra, merge, và deploy sớm nhất có thể.
 
 !> Bạn nên xem thử ở máy nhà trước khi tạo Pull Request<br>1. Cài [Docsify](https://docsify.js.org/) `npm i docsify-cli -g`<br>2. `docsify serve ./docs`
 
-?> Để thêm 1 mục vào thanh mục lục bên trái, hãy sửa ở file `_sidebar.md`
+?> Để thêm 1 mục vào thanh mục lục bên trái, hãy sửa ở file `_sidebar.md` nằm _cùng thư mục_.
 
 ## Cách format bài viết
 
