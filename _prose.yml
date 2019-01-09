@@ -1,0 +1,5 @@
+prose:
+  rooturl: 'docs'
+  siteurl: 'https://wiki.trada.tech/'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'images'
