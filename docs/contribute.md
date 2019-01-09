@@ -37,9 +37,9 @@ Các bài được viết bằng [markdown](https://www.markdownguide.org/cheat-
 
 > Đây là 1 blockquote.
 
-?> _NOTE_ Đây là 1 ô ghi chú.
+?> Đây là 1 ô ghi chú.
 
-!> **WARN** Đây là 1 ghi chú quan trọng.
+!> Đây là 1 ghi chú quan trọng.
 
 ---
 
@@ -50,9 +50,9 @@ Các bài được viết bằng [markdown](https://www.markdownguide.org/cheat-
 
 > Đây là 1 blockquote.
 
-?> _NOTE_ Đây là 1 ô ghi chú.
+?> Đây là 1 ô ghi chú.
 
-!> **WARN** Đây là 1 ghi chú quan trọng.
+!> Đây là 1 ghi chú quan trọng.
 ```
 
 ## Liên hệ
