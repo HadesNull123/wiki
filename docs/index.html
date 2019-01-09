@@ -9,10 +9,13 @@
   <link rel="icon" href="https://trada.tech/favicon.ico">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <style>
-    body {font-size: 17px}
-    .sidebar ul li {font-size:16px; color:#999}
-    .sidebar ul li p {font-size:18px; color:#505d6b; text-transform: uppercase}
-    .sidebar ul li a {font-size: 16px}
+body {font-size: 17px}
+.sidebar ul li {font-size:16px; color:#999}
+.sidebar ul li p {font-size:18px; color:#505d6b; text-transform: uppercase}
+.sidebar ul li a {font-size: 16px}
+.markdown-section {
+  padding: 30px 4.5% 40px
+}
 /****** Sidebar Toggle ******/
 .sidebar-toggle {
   cursor: pointer;
@@ -75,6 +78,10 @@ body .sidebar-toggle span:nth-child(3) {
 
   body.close .sidebar-toggle {
     left: calc(300px + 1.5rem);
+  }
+
+  .content {
+    padding-top: 48px;
   }
 }
 
