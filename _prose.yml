@@ -1,6 +1,4 @@
-site:
-  baseurl: '/'
 prose:
   rooturl: 'docs/bitcoin'
   siteurl: 'https://wiki.trada.tech/'
-  media: 'images'
+  media: 'docs/bitcoin/images'
