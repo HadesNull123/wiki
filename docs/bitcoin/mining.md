@@ -1,6 +1,5 @@
                                                 
 
-
 Mining là quá trình add thêm các block vào blockchain
 
 ### Mining là gì?
@@ -16,4 +15,10 @@ Mọi Node trên Bitcoin Network sẽ đều share thông tin chung về các tr
 Mỗi Node cũng có tùy chọn ( option ) để thử và đào ( mine ) các giao dịch trên MEMORY TOOL để đưa vào file chưa tất cả các transaction được xác nhận ( mine ) , file này chính là blockchain.
 
 ![02-node-pool-block.png]({{site.baseurl}}/docs/bitcoin/images/02-node-pool-block.png)
+
+> Để add được 1 transaction từ Memory Pool vào trong Blockchain thì Node sẽ tốn rất nhiều tài nguyên tính toán ( computer processing power ), và tất nhiên đi kèm với nó là việc tốn điện để chạy máy.
+
+
+
+
 
