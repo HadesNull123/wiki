@@ -29,25 +29,31 @@ Chúng tôi sẽ kiểm tra, merge, và deploy sớm nhất có thể.
 
 Các bài được viết bằng [markdown](https://www.markdownguide.org/cheat-sheet/). Ngoài ra, Blockchain Wiki hỗ trợ thêm `#>` (subheader), `?>` (info/tip box), `!>` (warn box).
 
-Ví dụ:
+**Ví dụ:**
+
+---
+
+#> Đây là 1 sub-header, hãy để ngay sau title chính để nhấn mạnh.
+
+> Đây là 1 blockquote.
+
+?> Đây là 1 ô ghi chú.
+
+!> Đây là 1 ghi chú quan trọng.
+
+---
+
+Để có kết quả như trên, hãy sử dụng markdown như sau:
 
 ```markdown
+#> Đây là 1 sub-header, hãy để ngay sau title chính để nhấn mạnh.
+
 > Đây là 1 blockquote.
 
 ?> Đây là 1 ô ghi chú.
 
 !> Đây là 1 ghi chú quan trọng.
 ```
-
-Kết quả:
-
-> Đây là 1 blockquote.
-
-?> Đây là 1 ô ghi chú.
-
-!> Đây là 1 ghi chú quan trọng.
-
-#> Đây là 1 sub-header, hãy để ngay sau title chính để nhấn mạnh.
 
 ## Liên hệ
 
