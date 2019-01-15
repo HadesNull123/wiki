@@ -1,5 +1,3 @@
-                                                
-
 Mining là quá trình add thêm các block vào blockchain
 
 
@@ -36,7 +34,8 @@ Bây giờ mục tiêu của bạn là hash chuỗi ký tự này cùng với m�
 
 ![04-node-pool-string-nonce-success.png](images/04-node-pool-string-nonce-success.png)
 
-Sau khi có chuỗi mới ta lại thay tiếp nonce bằng 1 số khác, thường là cứ theo thứ tự tặng dần 2,3, 4.. cho đến khi tìm được số nonce cuối cùng giúp tạo ra chuỗi thỏa mãn điều kiện giải quyết được bài toán. Ở đây số nonce tìm được cuối cùng là 80085
+Sau khi có chuỗi mới ta lại thay tiếp nonce bằng 1 số khác, thường là cứ theo thứ tự tặng dần 2,3, 4.. cho đến khi tìm được số nonce cuối cùng giúp tạo ra chuỗi thỏa mãn điều kiện giải quyết được bài toán. Ở đây số nonce tìm được cuối cùng là 
+
 
 
 
