@@ -26,3 +26,10 @@ Hãy tưởng tượng bạn là 1 Node, bạn có thể biến đổi các tran
 
 ![03-node-pool-string.png](images/03-node-pool-string.png)
 
+Bây giờ mục tiêu của bạn là hash chuỗi ký tự này cùng với một con số để tạo ra một chuỗi ký tự mới bắt đầu bằng một số các chữ số 0.
+
+![04-node-pool-string-nonce.png](images/04-node-pool-string-nonce.png)
+
+![04-node-pool-string-nonce-success.png](images/04-node-pool-string-nonce-success.png)
+
+
