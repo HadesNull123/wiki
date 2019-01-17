@@ -54,13 +54,15 @@ Tại sao chúng ta không add thẳng transaction luôn vào blockchain cho xon
 
 Khi bạn tạo ra một giao dịch bitcoin thì các node trên mạng Bitcoin Network không thể nghe và biết về nó ngay lập tức. Thay vào đó transaction này sẽ được chuyển tới các node khác trong mạng bằng cách truyền từ node này sang node khác.
 
-Ảnh
+![04-node-pool-string-nonce-success-reward.png](images/04-node-pool-string-nonce-success-reward.png)
 
 Tuy nhiên thì rất có  thể sẽ xảy ra trường hợp là tại một transaction khác cùng sử dụng một lượng bitcoin như transaction vừa rồi và transaction đó cũng được thêm vào blockchain.  Ví dụ bạn có thể dùng 1 bitcoin để mua bia và ngay sau đó cũng dùng 1 bitcoin đó để mua 1 piza ( đây là lúc coin còn rẻ thôi nhé còn giờ thì 1 coin mua được cả núi bia với pizza ). Đây chính là tình huống gian lận có thể xảy ra, vì cả 2 giao dịch đều được gửi đi để các node khác nhận, trong khi một số node chỉ biết về giao dịch mua bia, một số khác lại chỉ biết về giao dịch mua piza, rất có thể cả 2 giao dịch đều được xác nhận là hợp lệ.
 
-Ảnh
+![05-network-transaction-propagation.png](images/05-network-transaction-propagation.png)
 
 Mặc dù là bạn thực hiện transaction mua piza sau transaction mua bia, nhưng do cách mà các transaction này được truyền đi trên mạng Bitcoin Network qua những con đường lòng vòng nên có sự không thống nhất trong việc xác nhận là bạn đã mua piza hay mua bia.
+
+![06-network-transaction-propagation-pizza.png](images/06-network-transaction-propagation-pizza.png)
 
 # Vậy làm thế nào để mạng Bitcoin Network quyết định transaction nào sẽ hợp lệ
 
@@ -68,7 +70,7 @@ Tất nhiên đó là thông qua cơ chế mining đã nói ở trên.
 
 Nếu node nào vượt  qua được thử thách thì các transaction trong memory pool của nó sẽ được đưa vào blockchain
 
-Ảnh
+![07-network-transaction-resolution.png](images/07-network-transaction-resolution.png)
 
 Có vẻ đây không hẳn là một cách làm chân chính để lựa chọn các transaction, về lý tưởng thì phải là transaction nào được tạo ra trước thì sẽ được chọn, tuy nhiên chúng ta không có giải pháp để đáp ứng được điều đó. Đây là cách tối ưu để mạng Bitcoin Network tạo ra sự đồng thuận trong việc xử lý các thông tin có xung đột, mâu thuẫn với nhau.
 
@@ -96,7 +98,7 @@ Và gõ lệnh sau
 
 setgenerate true
 
-Ảnh
+![setgenerate-true.jpg](images/setgenerate-true.jpg)
 
 Lệnh này sẽ bật chế độ đào lên
 
@@ -106,4 +108,3 @@ Muốn tắt chế độ đào đi thì gõ lệnh sau
 
 setgenerate false
 
-Ảnh
