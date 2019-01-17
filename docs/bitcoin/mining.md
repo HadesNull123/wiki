@@ -96,7 +96,7 @@ Vào Help > Debug Window > Console
 
 Và gõ lệnh sau 
 
-'setgenerate true'
+`setgenerate true`
 
 ![setgenerate-true.jpg](images/setgenerate-true.jpg)
 
@@ -106,5 +106,5 @@ Chương trình Bitcoin Client trên  máy của bạn sẽ sinh ra một block 
 
 Muốn tắt chế độ đào đi thì gõ lệnh sau
 
-'setgenerate false'
+`setgenerate false`
 
