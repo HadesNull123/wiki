@@ -6,11 +6,11 @@ Mining là quá trình thêm các transaction vào blockchain
 
 ## Quá trình này hoạt động như thế nào?
 
-Mọi Node trên Bitcoin Network sẽ đều share thông tin chung về các transaction mới. Chúng sẽ lưu trữ các transaction này trên MEMORY TOOL của riêng mình. Dưới đây là hình dung về MEMORY OOL.
+Mọi Node trên Bitcoin Network sẽ đều share thông tin chung về các transaction mới. Chúng sẽ lưu trữ các transaction này trên MEMORY POOL của riêng mình. Dưới đây là hình dung về MEMORY POOL.
 
 ![01-network-memory-pool.png](images/01-network-memory-pool.png)
 
-Mỗi Node cũng có tùy chọn ( option ) để thử và đào ( mine ) các giao dịch trên MEMORY TOOL để đưa vào file chưa tất cả các transaction được xác nhận ( mine ) , file này chính là blockchain.
+Mỗi Node cũng có tùy chọn ( option ) để thử và đào ( mine ) các giao dịch trên MEMORY POOL để đưa vào file chưa tất cả các transaction được xác nhận ( mine ) , file này chính là blockchain.
 
 ![02-node-pool-block.png](images/02-node-pool-block.png)
 
@@ -36,10 +36,9 @@ Sau khi có chuỗi mới ta lại thay tiếp nonce bằng 1 số khác, thư�
 
 Nhìn thì có vẻ dễ dàng nhưng thật ra đây là một bài toán khó, vì bạn tìm ra lời giải số ( tìm được số nonce thỏa mãn điều kiện ) chỉ bằng cách thử và sai. Và đó chính là lý do mà quá trình này được gọi là đào ( mining ) vì nó có khác gì việc đào vàng đâu, bạn phải cuốc đất và tìm quặng vàng lẫn trong đó, kết quả còn phụ thuộc và cả sự may mắn nữa, ăn may thì bạn tìm được vàng. Mỗi nhát cuốc mà bạn vung lên chính là một hành động hashsing. Đào vàng thì tốn sức còn hasing thì lại tốn tài nguyên tính toán của máy tính ( processing power ).
 
-Nếu bạn may mắn tìm được kết quả đúng thì transaction của bạn từ memory pool sẽ đươc đẩy  vào blockchain.  Các node khác trên node khác trên network cũng sẽ thêm block mà bạn đào được vào file blockchain của họ.
+Nếu bạn may mắn tìm được kết quả đúng thì transaction của bạn từ memory pool sẽ đươc đẩy vào blockchain.  Các node khác trên node khác trên network cũng sẽ thêm block mà bạn đào được vào file blockchain của họ.
 
 Bạn cũng sẽ nhận được 25BTC sẽ mỗi lần đào được block, và bạn cũng nhận được cả tiền phí hoa hồng cho các giao dịch mà bạn đã xác nhận.
-
 
 
 > Một chú thích thêm lý do tại sao lại cần hash ra chuỗi bắt đầu bằng một số các chữ số 0. Nguyên do là Difficulity ( mức độ khó của việc đào ) . Mức độ khó này được quy định bởi Network, tùy theo số lượng các miner  ( người tham gia đào ).  Càng có nhiều người tham gia đào thì độ khó sẽ được tăng lên và số lượng chữ số 0 trong chuỗi kết quả hash ( hash result ) càng cần nhiều hơn.  Đây là chủ ý của Nakamoto Satoshi cha đẻ bitcoin tạo ra để ngăn cản việc có thể đào các block mới một cách dễ dàng.
