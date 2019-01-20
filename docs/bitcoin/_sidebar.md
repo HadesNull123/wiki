@@ -7,7 +7,7 @@
     * [Mining](bitcoin/mining.md "Mining")
         * [Blockchain](bitcoin/blockchain.md)
         * [Blocks](bitcoin/blocks.md)
-        * [Difficulty](bitcoin/difficult.md)
+        * [Difficulty](bitcoin/difficulty.md)
     * Transactions
         * Output
             * Output Locks
