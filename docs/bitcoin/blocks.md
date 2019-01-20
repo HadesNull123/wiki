@@ -1,5 +1,5 @@
 
-Block là gì?
+###Block là gì?
 
 Block là một nhóm các transaction được gom lại với nhau để add vào blockchain.
 
@@ -9,17 +9,17 @@ Block được tạo bởi các miner
 
 Khi bạn tạo ra một transaction thì nó sẽ không được add thẳng vào blockchain mà nó được giữ lại trong Transaction Pool hay còn gọi là Memory Pool
 
-Ảnh
+![01-transaction_pool.png](images/01-transaction_pool.png)
 
 Nếu bạn là một miner thì công việc của bạn sẽ là các transactions từ memory pool vào một Block gọi là "candidate block" ( tức là ứng cử viên để xem xét có đưa vào Blockchain hay không ). Tiếp sau đó miner sẽ ra sức đẩy "candidate block" này vào trong blockchain.
 
-Ảnh
+![02-candidate_block.png](images/02-candidate_block.png)
 
 # Block Header
 
 Mỗi một canidate block sẽ có một Block Header chứ các thông tin Metadata để mô tả về block đó
 
-Ảnh
+![03-block_header.png](images/03-block_header.png)
 
 Miner sẽ sử dụng Metadata này khi cố gắng đưa block này vào trong blockchain
 
@@ -53,7 +53,7 @@ Tất cả các transactions sẽ được băm ( hash ) với nhau để tạo 
 
 Để đưa candidate block vào blockchain thì bạn phải hash data trong Block Header và hy vọng kết quả sau khi hash có giá trị nhỏ hơn giá trị của Target.
 
-Ảnh
+![05-block_target.png](images/05-block_target.png)
 
 Target lại được tính toán từ Difficulty. Một giá trị được chỉ định bởi Bitcoin Network để điều chỉnh mức độ khó khi add thêm một block mới vào blockchain.
 
@@ -67,7 +67,7 @@ Có thể bạn đang cảm thấy lúng túng khi phải phân biệt giữa Ta
 
 Có lẽ có một điều thiếu sót còn chưa được đề cập ở đầu bài. Thực ra thì chúng ta sẽ không chỉ hash mỗi Block Header mà nó được hash cùng với một con số nữa đi kèm ( extra number ).
 
-Ảnh
+![06-block_nonce.png]({{site.baseurl}}/docs/bitcoin/images/06-block_nonce.png)
 
 Con số đó được gọi là Nonce. Nó chỉ là một con số tùy ý dùng để hash cùng với Block Header để đảm bảo là giá trị hash của block sẽ nằm dưới giá trị của Target.
 
@@ -75,7 +75,7 @@ Nonce: *number used once*. Một con số dùng tùy ý được sử dụng m�
 
 Nếu số Nonce đầu tiên không xài được ( thường bắt đầu từ số 0 ) thì hãy tăng nó lên và tiếp tục hash cùng với Block Header. Cuối cùng bạn sẽ tìm thấy một số Nonce mà kết quả hash của nó với Block Header là một giá trị nhỏ hơn giá trị của Target.
 
-Ảnh
+![06-block_nonce_success.png](images/06-block_nonce_success.png)
 
 > Có thể bạn sẽ thắc mắc giá trị hash có chứa ký tự chữ chứ không chỉ là số vậy thì lớn hơn hay nhỏ hơn có ý nghĩa thế nào?  Thực ra thì bạn hãy nghĩ đó là giá trị số nhưng đó là các số dạng thập lục phân ( hexadecimal ), loại số mà máy tính khoái làm việc với nó hơn là chúng ta vốn quen với hệ thập phân
 
@@ -83,7 +83,7 @@ Nếu số Nonce đầu tiên không xài được ( thường bắt đầu từ
 
 Khi bạn tìm thấy số Nonce cần thiết, bạn đã vượt qua được thử thách mà Bitcoin Network đưa ra cho bạn và tất nhiên candidate block của bạn sẽ trở thành 1 block mới trong chuỗi các block nằm trong file blockchain, hay nói theo một cách khác bạn đã đào được một block. Nhưng mà nói theo logic hình ảnh thì có vẻ đào là lấy từ lòng đất đem ra còn đây giống như đem chôn, mình có sẵn 1 cục vàng ( block ) rồi mình đem chôn xuống đất ( blockchain ) để lưu trữ lâu dài. Nhưng thôi kệ bọn Tây nó dùng từ đào thì ta cứ theo nó thôi. Ai bảo bọn nó giàu thì nó sẽ thành chuẩn thôi, cái này phải chấp nhận.
 
-Ảnh
+![07-block_complete.png](images/07-block_complete.png)
 
 Bây giờ tất cả các miner lại quay trở lại transaction pool và tiếp tục là việc với candidate block tiếp theo. Và các miner này lại tiếp tục dùng kết quả hash của block vừa đưa vào chain thành công để làm đầu vào cho Block Header mới để bắt đầu quá trình hash, mọi thứ lại được lặp lại.
 
