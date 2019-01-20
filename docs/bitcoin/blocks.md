@@ -1,5 +1,5 @@
 
-###Block là gì?
+##Block là gì?
 
 Block là một nhóm các transaction được gom lại với nhau để add vào blockchain.
 
@@ -39,7 +39,7 @@ Chúng ta sẽ không đi sâu vào chi tiết dữ liệu của từng trườn
 
 **Merkle Root**
 
-Tất cả các transactions sẽ được băm ( hash ) với nhau để tạo thành một chuỗi văn bản, nhưng đây có thể coi là phần quan trọng nhất của Block Header
+*Tất cả các transactions sẽ được băm ( hash ) với nhau để tạo thành một chuỗi văn bản, nhưng đây có thể coi là phần quan trọng nhất của Block Header
 
 **Time**
 
