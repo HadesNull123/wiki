@@ -67,7 +67,7 @@ Có thể bạn đang cảm thấy lúng túng khi phải phân biệt giữa Ta
 
 Có lẽ có một điều thiếu sót còn chưa được đề cập ở đầu bài. Thực ra thì chúng ta sẽ không chỉ hash mỗi Block Header mà nó được hash cùng với một con số nữa đi kèm ( extra number ).
 
-![06-block_nonce.png]({{site.baseurl}}/docs/bitcoin/images/06-block_nonce.png)
+![06-block_nonce.png](images/06-block_nonce.png)
 
 Con số đó được gọi là Nonce. Nó chỉ là một con số tùy ý dùng để hash cùng với Block Header để đảm bảo là giá trị hash của block sẽ nằm dưới giá trị của Target.
 
