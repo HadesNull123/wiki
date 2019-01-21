@@ -9,19 +9,19 @@ Bitcoin transaction là một bó dữ liệu.
 
 Dữ liệu này chứa các thông tin số lượng bitcoin được gửi đi, địa chỉ account gửi bitcoin đi cũng như địa chỉ account được gửi đến.
 
-H1
+![01-transaction-table.png](images/01-transaction-table.png)
 
 Đây là những thông tin đơn giản nên hoàn toàn có thể biểu diễn bằng 1 dòng
 
-H2
+![01-transaction-table-data.png](images/01-transaction-table-data.png)
 
 Khi bạn tạo một transaction tức là bạn đang gửi dữ liệu transaction qua mạng Bitcoin network
 
-H3
+![01-transaction-table-data-network.png](images/01-transaction-table-data-network.png)
 
 Cuối cùng thì một trong các nodes trong mạng sẽ mine ( đào ) transaction của bạn vào block và block này sẽ được thêm vào file các transaction sẽ được xác nhận ( tức là blockchain )
 
-H4
+![01-transaction-table-data-network-mined.png](images/01-transaction-table-data-network-mined.png)
 
 Đó là tất cả những gì về transaction.  Đơn giản nó chỉ là một dòng dữ liệu được đẩy lên mạng bitcoin network và chờ đợi được mine vào blockchain
 
@@ -31,7 +31,7 @@ Trước tiên cần có một địa chỉ bitcoin là một con số đại di
 
 Tuy nhiên khi bạn tạo ra một transaction thì nó sẽ không giống như lấy một lượng coin từ tài khoản này đổ vào tài khoản khác
 
-H5
+![02-address1.png](images/02-address1.png)
 
 Thay vào đó sẽ là mỗi địa chỉ tự theo dõi những giao dịch riêng lẽ mà nó nhận được
 
