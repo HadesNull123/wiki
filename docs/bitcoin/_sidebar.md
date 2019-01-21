@@ -8,8 +8,8 @@
         * [Blockchain](bitcoin/blockchain.md)
         * [Blocks](bitcoin/blocks.md)
         * [Difficulty](bitcoin/difficulty.md)
-    * Transactions
-        * Output
+    * [Transactions](bitcoin/transactions.md)
+        * [Output](bitcoin/outputs.md)
             * Output Locks
     * Keys & Addresses
         * Private Keys
