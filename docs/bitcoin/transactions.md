@@ -35,17 +35,17 @@ Tuy nhiên khi bạn tạo ra một transaction thì nó sẽ không giống nh�
 
 Thay vào đó sẽ là mỗi địa chỉ tự theo dõi những giao dịch riêng lẽ mà nó nhận được
 
-H6
+![02-address1-address2.png](images/02-address1-address2.png)
 
 Khi bạn muốn gửi 1 số bitcoin cho người khác, bạn sẽ lấy toàn bộ số tiền ( bitcoin ) mà bạn nhận được và dùng chúng để gửi một số tiền mới đến một địa chỉ mới.
 
-H7
+![02-address1-address2-address3.png](images/02-address1-address2-address3.png)
 
 Và khi ai đó muốn gửi tiền cho một người khác họ cũng dùng toàn bộ số bitcoin mà họ nhận được theo cách tương tự
 
 Như vậy trong thực tế bạn sẽ Nhận được bitcoin theo lô ( batches ) và bạn sẽ sử dụng các lô này để tạo ra các lô mới rồi gửi đi cho người khác. Bạn có thể hình dung việc này giống như bạn gom các đồng tiền lẻ do người khác gửi cho mình, gộp vài đồng lại với nhau thành một số tiền to hơn rồi lại gửi chỗ tiền ( tập hợp từ các đồng tiền lẻ ) đó đi cho người khác. Đó chính là cách mà các transaction hoạt động.
 
-H8
+![02-address1-address2-change.png](images/02-address1-address2-change.png)
 
 # Chờ một chút....
 
@@ -53,7 +53,7 @@ Chuyện gì sẽ xảy ra nếu tổng số lô ( batches ) mà bạn nhận đ
 
 Dưới đây là một tình huống ( mà những tình huống như thế này thì lại thường xuyên hay xảy ra trong thực tế. Khi đó bạn chỉ cần thêm 1 output nữa vào transaction và gửi phần sai biệt lại cho chính mìn
 
-H9
+![02-address1-address2-change-data.png](images/02-address1-address2-change-data.png)
 
 Xem ra có vẻ rắc rối, nhưng đó chính xác lại là cách mà nó hoạt động từ quan điểm lập trình. Vì thế hãy quen với nó.
 
@@ -65,7 +65,7 @@ Xem ra có vẻ rắc rối, nhưng đó chính xác lại là cách mà nó ho�
 
 3. Tất các transaction đều được biểu diễn bởi 1 dòng dữ liệu duy nhất.
 
-H10
+![02-pot.png](images/02-pot.png)
 
 Để hiểu rõ hệ thống các outputs hoạt động thế nào hãy đọc chi tiết trong bài Outputs
 
@@ -75,22 +75,22 @@ Nếu tạo ra một giao dịch chỉ đơn giản là sinh ra một dòng dữ
 
 Trả lời: Bởi vì mỗi transaction output có 1 cái khóa...
 
-H11
+![03-address-key.png](images/03-address-key.png)
 
 Nếu bạn tạo ra một transaction mới mà không mở khóa các output thì mạng bitcoin network sẽ  reject ( từ chối ) transaction đó.
 
-H12
+![03-address-key-unlock.png](images/03-address-key-unlock.png)
 
 May mắn cho bạn là địa chỉ bitcoin của bạn có 1 private key
 
-H13
+![03-output-locks.png](images/03-output-locks.png)
 
 Nếu bạn muốn gửi bitcoin đi đâu đó thì bạn phải dùng private key này để mở khóa các output đặt tại địa chỉ của mình
 
-H14
+![03-output-locks-accepted.png](images/03-output-locks-accepted.png)
 
 Sau khi mở khóa các output mà bạn muốn sử dụng thì transaction sẽ được chấp nhận và lan truyền đi bởi các node trong bitcoin network
 
-H14
+![03-output-locks-rejected.png](images/03-output-locks-rejected.png)
 
 Và đó là cách mà các transaction của bitcoin hoạt động.
