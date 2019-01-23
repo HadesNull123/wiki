@@ -7,7 +7,7 @@ Là những lô ( batch ) bitcoin mới được tạo ra trong các giao dịch
 
 Định nghĩa là như vậy nhưng có lẽ nó vẫn còn hơi mô hồ cho nên để thực sự hiểu nó hoạt động như thế nào thì cách tốt nhất là nhìn vào ví dụ cụ thể
 
-H1
+![00-generation-transaction.png](images/00-generation-transaction.png)
 
 # Giao dịch số 1- Một giao dịch đơn giản
 
@@ -15,21 +15,21 @@ Chúng ta cùng bắt đầu với câu chuyện với việc sinh ra một lô 
 
 Giả sử bạn đang đào coin, và nhờ phép lạ nào đó mà bạn đào được 1 block và kiếm được 25 bitcoin tiền thưởng do đào được block này
 
-H2
+
 
 Mỗi miner cũng đặt địa chỉ của mình trên top của mỗi block nếu bạn đào được 1 block thì tiền thưởng ( BLOCK REWARD ) sẽ được chuyển đến tài khoản của bạn.
 
 Đây là trạng thái tài khoản tại địa chỉ của bạn
 
-H3
+![01-transaction1-before.png](images/01-transaction1-before.png)
 
 Có tiền về thì tất nhiên là phải chúc mừng rồi. Chúng ta cùng uống bia nhé
 
-H4
+![01-beer.png](images/01-beer.png)
 
 Nhưng để có bia thì phải xì tiền ra mua. Bạn sẽ lấy ra 1 bitcoin trong số tiền vừa rồi để mua bia nhé. Có vẻ bắt đầu hiểu, nhưng đây vẫn không phải là cách mà các giao dịch ( transaction ) hoạt động
 
-H5
+![01-transaction1-chip.png](images/01-transaction1-chip.png)
 
 Thực tế sẽ không phải như thế này
 
@@ -41,7 +41,7 @@ Nhưng cần nhớ rõ là chúng ta sẽ không tiêu cả 25 bitcoin cho việ
 
 2. Gửi lại cho chính địa chỉ của mình ( tiền thừa được trả lại )
 
-H6
+![01-transaction1.png](images/01-transaction1.png)
 
 Một số lô ( batch ) mới được tạo ra gọi là Outputs
 
@@ -51,7 +51,7 @@ Có vẻ như là một cách làm rất lòng vòng nhưng nó cho cùng một 
 
 Đây là hình ảnh của các địa chỉ sau giao dịch
 
-H7
+![01-transaction1-after.png](images/01-transaction1-after.png)
 
 Cửa hàng bia có 1 batch 1 bitcoin còn chúng ta vừa tự gửi cho mình 1 batch 24 bitcoin còn lô 25 bitcoin ban đầu được chuyển sang trạng thái "sử dụng hết".
 
@@ -73,13 +73,15 @@ Từ giờ trở đi chúng ta sẽ sử dụng từ Ouput thay cho Batch ( lô 
 
 Chúng ta hãy quay lại với cái quán đã bán bia cho chúng ta, nhìn vào địa chỉ bitcoin của quán này thì có vẻ là họ làm ăn rất phát đạt.
 
-H8 
+![02-transaction2-before.png](images/02-transaction2-before.png)
 
 Tuy nhiên chúng ta biết là bia thì không tự mọc ra từ trên cây nên các quán bia đều phải cần đến máy làm bia.
 
+![02-beer-machine.png](images/02-beer-machine.png)
+
 Oh, có một cái máy làm bia giá có vẻ hời khoảng 4.2 bitcoin. Mua nó về thôi
 
-H9
+![02-transaction2.png](images/02-transaction2.png)
 
 Chắc bạn đang thắc mắc về hình vẽ ở trên. Hơi khó giải thích 1 chút.
 
@@ -91,7 +93,7 @@ Chắc bạn đang thắc mắc về hình vẽ ở trên. Hơi khó giải thí
 
 Và đây là trạng thái của địa chỉ bitcoin của quán bia
 
-H10
+![02-transaction2-after.png](images/02-transaction2-after.png)
 
 Một lần nữa Output lại được sử dụng như là Input và "tiêu hết", sau đó chúng sẽ không được sử dụng lại lần nữa.
 
@@ -115,6 +117,6 @@ Nhìn lại các giao dịch ở trên, các bạn hãy để ý là chúng ta �
 
 Giả sử chúng ta không gửi transaction cuối cùng lên mạng bitcoin network và thêm phí giao dịch cho nó
 
-H11
+![03-transaction2-fee.png](images/03-transaction2-fee.png)
 
 Nếu vậy thì Output cho phí giao dịch sẽ là gì ? Hãy nhìn vào kích thước của output
