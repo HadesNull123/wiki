@@ -119,4 +119,9 @@ Giả sử chúng ta không gửi transaction cuối cùng lên mạng bitcoin n
 
 ![03-transaction2-fee.png](images/03-transaction2-fee.png)
 
-Nếu vậy thì Output cho phí giao dịch sẽ là gì ? Hãy nhìn vào kích thước của output
+Nếu vậy thì Output cho phí giao dịch sẽ là gì ? Hãy nhìn vào kích thước của output.
+
+> Nếu tổng số output mà nhỏ hơn input có nghĩa là sẽ có một số bitcoin còn lại không được sử dụng hết. Phần còn lại đó chính là phí giao dịch
+
+Tất cả các phí giao dịch sẽ là phần còn lại của giao dịch. Số tiền còn lại sau mỗi giao dịch luôn được các miner nhặt lấy. Vì vậy khi bạn tạo giao dịch mà quên không tạo output cho phần tiền thừa thì miner sẽ vẫn lấy toàn bộ số tiền còn lại bất kể nó là bao nhiêu, bạn có nguy cơ mất tiền vì sai sót của mình.
+
