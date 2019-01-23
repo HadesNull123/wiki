@@ -5,11 +5,11 @@ Là những lô ( batch ) bitcoin mới được tạo ra trong các giao dịch
 
 > Hệ thống giao dịch bitcoin liên quan đến việc gửi và nhận một lô những bitcoin được gọi là OUTPUTS
 
- Định nghĩa là như vậy nhưng có lẽ nó vẫn còn hơi mô hồ cho nên để thực sự hiểu nó hoạt động như thế nào thì cách tốt nhất là nhìn vào ví dụ cụ thể
+Định nghĩa là như vậy nhưng có lẽ nó vẫn còn hơi mô hồ cho nên để thực sự hiểu nó hoạt động như thế nào thì cách tốt nhất là nhìn vào ví dụ cụ thể
 
 H1
 
-# Giao dịch thứ nhất- Một giao dịch đơn giản
+# Giao dịch số 1- Một giao dịch đơn giản
 
 Chúng ta cùng bắt đầu với câu chuyện với việc sinh ra một lô các bitcoin mới tinh.
 
@@ -39,7 +39,7 @@ Nhưng cần nhớ rõ là chúng ta sẽ không tiêu cả 25 bitcoin cho việ
 
 1. Cửa hàng bia ( thanh toán )
 
-2. Gửi lại cho chính địa chỉ của mình ( tiền thừa được trả lại ) 
+2. Gửi lại cho chính địa chỉ của mình ( tiền thừa được trả lại )
 
 H6
 
@@ -55,6 +55,66 @@ H7
 
 Cửa hàng bia có 1 batch 1 bitcoin còn chúng ta vừa tự gửi cho mình 1 batch 24 bitcoin còn lô 25 bitcoin ban đầu được chuyển sang trạng thái "sử dụng hết".
 
-H8
+Việc này sẽ tương đương với việc chúng ta lấy 1 bitcoin từ địa chỉ của mình và gửi cho người khác lúc đầu nhưng chúng ta đã hiểu được cơ chế bên trong
 
-H3
+**Tóm tắt**
+
+Đây là cách mà hệ thống giao dịch bitcoin được thiết kế
+
+1. Lấy ra ouput ( lô các bitcoin ) có sẵn
+
+2. Tạo ra một ouput mới có kích thước mới từ output có sẵn ở trên
+
+3. Gửi các output đến các địa chỉ khác nhau
+
+# Giao dịch số 2- Sử dụng ouput với tư cách là input ( đầu vào )
+
+Từ giờ trở đi chúng ta sẽ sử dụng từ Ouput thay cho Batch ( lô ).
+
+Chúng ta hãy quay lại với cái quán đã bán bia cho chúng ta, nhìn vào địa chỉ bitcoin của quán này thì có vẻ là họ làm ăn rất phát đạt.
+
+H8 
+
+Tuy nhiên chúng ta biết là bia thì không tự mọc ra từ trên cây nên các quán bia đều phải cần đến máy làm bia.
+
+Oh, có một cái máy làm bia giá có vẻ hời khoảng 4.2 bitcoin. Mua nó về thôi
+
+H9
+
+Chắc bạn đang thắc mắc về hình vẽ ở trên. Hơi khó giải thích 1 chút.
+
+1. Quán bia không có output đơn lẻ tại địa chỉ của mình để trả cho số lẻ 4.2 bitcoin nên nó sẽ tập hợp 1 nắm các outputs với nhau để có tổng số lớn hơn 4.2 bitcoin
+
+2. Khi tạo một giao dịch thì các output mà chúng ta vừa gom lại với nhau để trả tiền sẽ được sử dụng như là một Input cho một giao dịch. Khi chúng ta sử dụng output trong một giao dịch với vai trò trung gian tạm thời thì nó được gọi là input.
+
+3. Sử dụng tổng số Input là 4.5 bitcoin thì cửa hàng bia tạo ra 2 output mới là 4.2 và 0.3
+
+Và đây là trạng thái của địa chỉ bitcoin của quán bia
+
+H10
+
+Một lần nữa Output lại được sử dụng như là Input và "tiêu hết", sau đó chúng sẽ không được sử dụng lại lần nữa.
+
+Phần output chưa tiêu thì chúng ta vẫn có thể tiếp tục sử dụng. Chúng ta gọi chúng là *unspent transaction outputs*([UTXO](http://learnmeabitcoin.com/glossary/utxo)s)
+
+> Tổng số bitcoin tại một địa chỉ sẽ bằng tổng số các output chưa tiêu hết UTXO
+
+Chúng ta chọn các output `[1] + [0.5] + [2] + [1] `để làm input  cho giao dịch. Miễn là tổng sổ các output này lớn hơn số lượng bitcoin mà chúng ta muốn gửi đi chúng ta có thể sử dụng bất cứ tổ hợp các output (well, *inputs*) nào mà chúng ta muốn.
+
+`[1] + [3] + [0.5]             = 4.5
+[3] + [2]                     = 5
+[1] + [3] + [0.5] + [2] + [1] = 7.5`
+
+Tất cả cách cách tổ hợp ouput này với nhau để tạo ra input đều ok cả, giống như bạn có thể dùng các đồng 10 nghìn, 20 nghìn hay 50 nghìn để mua gói tăm. Khác nhau chỉ là tiền thừa trả lại trong mỗi tình huống thôi.
+
+Giao dịch số 3- Phí giao dịch
+
+Nhìn lại các giao dịch ở trên, các bạn hãy để ý là chúng ta đã không đề cập đến phí giao dịch. Nếu không trả phí giao dịch thì các giao dịch mà bạn tạo ra lúc nãy sẽ phải chờ một lúc lâu bởi vì Bitcoin là hệ thống có phí giao dịch, nếu bạn chịu trả phí thì giao dịch của bạn sẽ giành được quyền ưu tiên xử lý trước.
+
+> Phí giao dịch sẽ hấp dẫn các miner chọn giao dịch của bạn đưa vào xử lý,  và khi họ đào block mới, giao dịch của bạn sẽ được add vào block mà họ đào.
+
+Giả sử chúng ta không gửi transaction cuối cùng lên mạng bitcoin network và thêm phí giao dịch cho nó
+
+H11
+
+Nếu vậy thì Output cho phí giao dịch sẽ là gì ? Hãy nhìn vào kích thước của output
