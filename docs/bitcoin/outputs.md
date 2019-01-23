@@ -103,9 +103,9 @@ Phần output chưa tiêu thì chúng ta vẫn có thể tiếp tục sử dụn
 
 Chúng ta chọn các output `[1] + [0.5] + [2] + [1] `để làm input  cho giao dịch. Miễn là tổng sổ các output này lớn hơn số lượng bitcoin mà chúng ta muốn gửi đi chúng ta có thể sử dụng bất cứ tổ hợp các output (well, *inputs*) nào mà chúng ta muốn.
 
-`[1] + [3] + [0.5]             = 4.5
-[3] + [2]                     = 5
-[1] + [3] + [0.5] + [2] + [1] = 7.5`
+`[1] + [3] + [0.5]             = 4.5`
+`[3] + [2]                     = 5`
+`[1] + [3] + [0.5] + [2] + [1] = 7.5`
 
 Tất cả cách cách tổ hợp ouput này với nhau để tạo ra input đều ok cả, giống như bạn có thể dùng các đồng 10 nghìn, 20 nghìn hay 50 nghìn để mua gói tăm. Khác nhau chỉ là tiền thừa trả lại trong mỗi tình huống thôi.
 
