@@ -10,7 +10,7 @@
         * [Difficulty](bitcoin/difficulty.md)
     * [Transactions](bitcoin/transactions.md)
         * [Output](bitcoin/outputs.md)
-            * [Oput Locks](bitcoin/outputlocks.md)
+            * [Output Locks](bitcoin/outputlocks.md)
     * Keys & Addresses
         * Private Keys
         * Public Keys
