@@ -11,8 +11,8 @@
     * [Transactions](bitcoin/transactions.md)
         * [Output](bitcoin/outputs.md)
             * [Output Locks](bitcoin/outputlocks.md)
-    * [Keys & Addresses](bitcoin/keysaddresses.md.md)
-        * Private Keys
+    * [Keys & Addresses](bitcoin/keysaddresses.md)
+        * [Private Keys](bitcoin/privatekeys.md)
         * Public Keys
             * Digital Signatures
             * Signing & Verifying
