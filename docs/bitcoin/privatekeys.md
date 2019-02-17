@@ -21,15 +21,15 @@ Thông thường đây là dạng phổ biến nhất mà chúng ta thấy.
 
 Bit là đơn vị nhỏ nhất của dữ liệu trong máy tính.  Nó chỉ có thể lưu được 1 giá trị là 0 hoặc 1.
 
-H1
+![01-bit.png](images/01-bit.png)
 
 Tuy nhiên bạn có thể dùng nhiều bit để biểu diễn mọi loại dữ liệu như là các con số mà chúng ta thấy hàng ngày. Hình ảnh dưới đây cho chúng ta thấy cách mà máy tính sử dụng bit để lưu trữ các số khác nhau
 
-H2
+![01-bit-numbers.png](images/01-bit-numbers.png)
 
 Một số 256 bit là một số được biểu diễn bằng 256 bit
 
-H3
+![01-bit-numbers-max.png](images/01-bit-numbers-max.png)
 
 Ở trên là giá trị lớn nhất có thể biểu diễn được bằng 256 bit. Nên có thể nói 1 số 256 bit là một số nằm giữa khoảng\\
 
@@ -43,13 +43,13 @@ Max: 115792089237316195423570985008687907853269984665640564039457584007913129639
 
 Nhưng đã nói ở trên, nó được sinh ra một cách ngẫu nhiên. Chương trình sinh ra số ngẫu nhiên thì đơn giản thôi, và nó có 1 chương trình sinh số ngẫu nhiên 256 bit được nhúng trong phần mềm bitcoin.
 
-H4
+![02-lol-private-key-machine.png](images/02-lol-private-key-machine.png)
 
 Nếu muốn thì bạn có thể tự mình tạo ra một số ngẫu nhiên bằng 3 cách sau
 
 1\. Tung đồng xu 256 lần
 
-H5
+![02-1-coin.png](images/02-1-coin.png)
 
 Kết quả sẽ cho bạn 1 số nhị phân biểu diễn bằng 256 bit và bạn có thể chuyển đổi sang các dạng khác
 
@@ -60,8 +60,8 @@ Kết quả sẽ cho bạn 1 số nhị phân biểu diễn bằng 256 bit và b
 Hàm này sẽ sinh ngẫu nhiên cho bạn một số thập phân.
 
 3\. Băm dữ liệu (hash ) sử dụng hàm SHA256\
-\
-H6
+
+![02-3-sha256.png](images/02-3-sha256.png)
 
 Hàm này sẽ trả về cho ta một số thập lục phân
 
@@ -83,16 +83,13 @@ Như bạn thấy, không ai có thể làm được điều đó. Phạm vi c�
 `keys = 115792089237316195423570985008687907852837564279074904382605163141518161494337
 monkeys = 1000000
 monkeyhashrate = 1000000
-
 keyspersecond = monkeys * monkeyhashrate
-
 seconds = keys / keyspersecond
 minutes = seconds / 60
 hours = minutes / 60
 days = hours / 24
 years = days / 365
 millionyears = years / 1000000
-
 print millionyears`
 
 
