@@ -23,7 +23,7 @@ Bạn cần nhét private key vào một hàm toán học đặc biệt và nó 
 
 Hàm đó được gọi là phép nhân elip nó có  dạng mô tả hình học giống như đồ thị cong như hình dưới đây
 
-H1
+![01-elliptic-curve.png](images/01-elliptic-curve.png)
 
 Chúng ta bắt đầu với 1 điểm G nằm trên đường cong này. Và nếu chúng ta sử dụng 1 phép nhân trên đường cong này.  Ví dụ nhân G với 2 thì kết quả của phép toán này sẽ tương ứng với di chuyển hình học mô tả bằng hình dưới đây theo thứ tự sau.
 
@@ -33,7 +33,7 @@ Chúng ta bắt đầu với 1 điểm G nằm trên đường cong này. Và n�
 
 3\.  Lấy giá trị nghịch đảo của điểm số  trên ( đối xứng qua trục hoành )
 
-H2
+![01-elliptic-curve-g.png](images/01-elliptic-curve-g.png)
 
 Thực tế là chúng ta có thể vẽ một tiếp tuyến ở bất cứ đâu, và nó có thể giao với đồ thị tại một điểm khác.
 
@@ -54,7 +54,7 @@ Và bây giờ chúng ta có điểm 2G là đầu ra cho phép biến đổi.  
 
 Các bạn để ý thấy nếu chúng ta hình dung điểm G như quả bóng bàn thì chuyển động của nó giống như quả bóng bàn nảy qua nảy lại xung quanh trục hoành. Và khi nhân G với 2 thì số lần "bóng nảy" sẽ là 2
 
-H3
+![01-elliptic-curve-g-multiplication.png](images/01-elliptic-curve-g-multiplication.png)
 
 Khi thay 2 bằng private key thì chúng ta sẽ có một chuyển động phức tạp hơn thế rất nhiều, cụ thể số lần "bóng nảy" ở đây sẽ là bằng private key.
 
@@ -78,13 +78,13 @@ Thao tác tiếp theo là chúng ta chuyển đổi các tọa độ này sang d
 
 Để hiểu lý do tại sao lại như vậy chúng ta cần đọc phần nén public key ở dưới
 
-H4
+![02-public-key-multiplication.png](images/02-public-key-multiplication.png)
 
 Để tiết kiệm không gian thì các public key chỉ sử dụng trục tọa độ x
 
 Bởi vì đường cong elip này là một phương trình y^2 =x^3\+7. Điều đó có nghĩa là nếu bạn có tọa độ x thì bạn có thể tìm ra tọa độ y tương ứng. Tuy nhiên thì đối y^2 là một vế của phương trình thì y có thể có giá trị âm hoặc giá trị dương
 
-H5
+![03-y-polarity.png](images/03-y-polarity.png)
 
 Vì vậy thông tin bổ sung duy nhất mà chúng ta cần tìm tọa độ y chính xác là cần biết tọa độ y ở trên hay ở dưới trục x
 
@@ -100,7 +100,7 @@ Trong bitcoin, phần chẵn hoặc lẻ được hiển thị bằng cách thê
 
 * lẻ=03
 
-H6
+![03-y-polarity-prefix.png](images/03-y-polarity-prefix.png)
 
 Như vậy thì dạng ban đầu của public key được đánh dấu bằng số 04 ở đầu, còn dạng nén của public key thì được đánh dấu bằng số 02 hoặc 03
 
@@ -137,11 +137,11 @@ Kết quả là
 
 2\.Bạn có thể đặt private key của mình vào một phép biến đổi toán học dạng đường cong elip để tạo được một giá trị mới khác
 
-H7
+![04-keys-ec-math.png](images/04-keys-ec-math.png)
 
 Sẽ có một sự chồng khớp nhỏ giữa các giá trị này
 
-H8
+![04-keys-ec-math-verification.png](images/04-keys-ec-math-verification.png)
 
 Giá trị mới mà bạn tạo ra từ private key mới của mình gọi là chữ ký số ( digital signature )
 
