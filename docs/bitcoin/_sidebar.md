@@ -13,7 +13,7 @@
             * [Output Locks](bitcoin/outputlocks.md)
     * [Keys & Addresses](bitcoin/keysaddresses.md)
         * [Private Keys](bitcoin/privatekeys.md)
-        * Public Keys
+        * [Public Keys](bitcoin/publickeys.md)
             * Digital Signatures
             * Signing & Verifying
 
