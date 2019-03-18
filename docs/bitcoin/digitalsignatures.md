@@ -61,7 +61,7 @@ Chữ ký số hoạt động được là nhờ toán học.
 
 1\. Chúng ta sử dụng kết hợp cả private key và dữ liệu của transaction ( `private key`\+`transaction data)` , bằng biến đổi toán học chúng ta sẽ tạo ra được chữ ký số.
 
-2\. Chúng ta sử dụng bộ dữ liệu ( *digital signature*\+`transaction data`\+`public key  )`và  cũng bằng những biến đổi toán học chúng ta cũng đưa ra được một kết quả private key hợp lệ đã được sử dụng để tạo ra chữ ký số.
+2\. Chúng ta sử dụng bộ dữ liệu ( `digital signature`\+`transaction data`\+`public key  )`và  cũng bằng những biến đổi toán học chúng ta cũng đưa ra được một kết quả chứng minh private key hợp lệ đã được sử dụng để tạo ra chữ ký số.
 
 Hãy nhớ rằng, mục đích của chữ ký số là để nhằm chứng minh rằng bạn là chủ sở hữu của public key.
 
