@@ -7,7 +7,7 @@ Một con số được tạo ra từ private key chứng minh rằng bạn sở
 
 Chữ ký số là một con số có kết nối, liên hệ toán học với publickey, mà bạn có thể dùng để chứng minh rằng mình biết private key mà không cần phải cho người khác xem private key
 
-H1
+![01-digital-signature-usage.png](images/01-digital-signature-usage.png)
 
 Nếu ai đó từng hỏi bạn rằng bạn có private key cho một địa chỉ hay public key nào đó không thì bạn có thể đưa chữ ký số ra để chứng minh là quyền sở hữu của mình
 
@@ -17,11 +17,11 @@ Nếu ai đó từng hỏi bạn rằng bạn có private key cho một địa c
 
 Bởi vì khi bạn tạo ra một transaction thì bạn cần unlock các output để sử dụng. Điều này có thể thực hiện được bằng cách chứng minh bạn sở hữu output. Và bạn làm điều đó bằng cách chứng tỏ rằng bạn biết private key của các output được khóa 
 
-H2
+![02-transaction-data.png](images/02-transaction-data.png)
 
 Nhưng nếu bạn đưa private key của mình vào dữ liệu transaction thì mọi người trên network đều có thể nhìn thấy nó
 
-H3
+![02-transaction-data-digsig.png](images/02-transaction-data-digsig.png)
 
 Nếu mọi người có private key của bạn thì họ có thể dùng nó để unlock các output đang bị lock và gửi nó đi từ địa chỉ bitcoin của bạn, tất nhiên như thế bạn sẽ bị mất tiền.
 
@@ -33,7 +33,7 @@ Một chữ ký số được dùng để unlock các output, bởi vì nó ch�
 
 Điều tuyệt vời nhất là chúng ta có thể dùng chữ ký số mà không làm lộ private key ra ngoài network.
 
-H4
+![03-digital-signature-components.png](images/03-digital-signature-components.png)
 
 # Điều gì ngăn chặn người khác dùng chữ ký số để unlock các output tại địa chỉ ví bitcoin của bạn?
 
@@ -43,11 +43,11 @@ Như chúng ta đã biết thì có thể dùng private key để unlock các ou
 
 Nói cách khác thì chúng ta không chỉ sử dụng mỗi private key để tạo một chữ ký số, mà chúng ta đồng thời sử dụng cả private key lẫn dữ liệu của chính bản thân transaction để làm đầu vào tạo ra chữ ký số
 
-H5
+![03-digital-signature-environment.png](images/03-digital-signature-environment.png)
 
 Do đó mỗi chữ ký số sẽ được ràng buộc với transaction mà nó được sử dụng trong đó.
 
-H6
+![03-digital-signature-environment-different.png](images/03-digital-signature-environment-different.png)
 
 Nếu ai đó sử dụng chữ ký số này để trong một transaction khác thì nó sẽ bị xung đột với các dữ liệu về transaction đó. Các node mạng network sẽ không chấp nhận transaction này.
 
@@ -65,7 +65,5 @@ Chữ ký số hoạt động được là nhờ toán học.
 
 Hãy nhớ rằng, mục đích của chữ ký số là để nhằm chứng minh rằng bạn là chủ sở hữu của public key.
 
-Nghe thì có vẻ ảo diệu nhưng thật ra tất cả bí mật đều nằm ở các phép biến đổi toán học và chúng ta sẽ biết nó hoạt động thế nào trong phần [Chữ ký số ( Ký và xác nhận )](http://trada.tech)
+Nghe thì có vẻ ảo diệu nhưng thật ra tất cả bí mật đều nằm ở các phép biến đổi toán học và chúng ta sẽ biết nó hoạt động thế nào trong phần [Chữ ký số ( Ký và xác nhận )](https://wiki.trada.tech/bitcoin/digitalsignatures)
 
-# [\
-](http://trada.tech)
