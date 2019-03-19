@@ -15,6 +15,6 @@
         * [Private Keys](bitcoin/privatekeys.md)
         * [Public Keys](bitcoin/publickeys.md) 
             * [Digital Signatures](bitcoin/digitalsignatures.md) 
-            * Signing & Verifying
+            * [Signing & Verifying](bitcoin/signingverifying.md)
 
 * [Đóng góp bài viết](contribute.md)
